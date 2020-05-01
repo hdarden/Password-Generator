@@ -1,10 +1,6 @@
 //when button is clicked on webpage
 var generateBtn = document.querySelector("#generate");
     
-// function object is to generate password
-function generatePassword () {
-
-
 //condition statements/questions
 var clickHowMany = prompt("How many characters would you like your password to be?");
 // if 8-128 then input is collected, else if not, line 27-32
@@ -13,7 +9,10 @@ var clickNumb = confirm("Click ok to confirm including numbers?");
 var clickLower = confirm("Click ok to confirm including lowercase letters?");
 var clickUpper = confirm("Click ok to confirm including uppercase letters?");
 
+// function object is to generate password
+function generatePassword () {
 
+  
 //Need an array of upper, lower, all numbers and special characters . 'push' what they chose into the array that they choose. 
 //arrays
 var rUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I","J", "K","L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
