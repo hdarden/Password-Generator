@@ -18,12 +18,16 @@ function generatePassword () {
     var rLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i","j", "k","l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var rNumber = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     var rSpecChar = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "}", "|", "~"];
+    var numbCharacters = (i >= 8 && i <= 128)
 
+//array used to input userInput into loop, to generate the password.
+    var userInput = []
 
 
 //user input of conditions
-if (clickHowMany = i >= 8 || i <= 128 ) {
-  userInput.push(noCharacters);
+if (clickHowMany) {
+  userInput.push(numbCharacters);
+  console.log(numbCharacters);
 }
 else {
   alert("must include 8-128 characters!!")
@@ -45,24 +49,25 @@ if (clickUpper); {
   userInput.push(rSpecChar);
 }
 
-//collection from user input^^^
 
-userInput = []
+}
+
 console.log(userInput);  
 
-return userInput;
 
 
-
-
-}
 ///loop 
-for (var i = 0; i < length; i ++){
-  var  userInput = userInput[Math.floor(Math.random() * userInput.length)];
-  var random = userInput[Math.floor() * userInput.length];
-  password=password+randomChar
+var result = "";
+
+for (var i = 0; i < passwordLength; i ++){
+  var  randomArray = userInput[Math.floor(Math.random() * userInput.length)];
+  var randomChar = randomArray[Math.floor() * randomArray.length];
+  
+  result += randomChar;
 }
-return password
+console.log(results);
+
+password=password+randomChar
 
 // Write password to the #password input//// added (userInput)
 function writePassword(userInput) {
