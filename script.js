@@ -117,6 +117,7 @@ function generatePassword() {
     var clickNumb = confirm("Click ok to confirm including numbers?");
     var clickLower = confirm("Click ok to confirm including lowercase letters?");
     var clickUpper = confirm("Click ok to confirm including uppercase letters?");
+
   if (clickSpec) {
     userInput.push(rUpper);
   }
@@ -137,7 +138,7 @@ function generatePassword() {
 
   console.log(userInput);
 
-  ///loop
+  ///loop result
   var result = "";
 
   for (var i = 0; i < clickHowMany; i++) {
@@ -148,15 +149,14 @@ function generatePassword() {
   }
   console.log(result);
   return result
-  //password = password + randomChar;
-  
+    
 }
 // Write password to the #password input//// added (userInput)
 function writePassword() {
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-//debub correcting undefined when password doesnt meet 8-128 characters. 
+
   passwordText.value = password;
 }
  
