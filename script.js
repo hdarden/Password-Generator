@@ -23,26 +23,26 @@ function generatePassword () {
 
 //user input of conditions
 if (clickHowMany = i >= 8 || i <= 128 ) {
-  userInput.push.noCharacters;
+  userInput.push(noCharacters);
 }
 else {
   alert("must include 8-128 characters!!")
 }
 
 if (clickSpec){
-   userInput.push.rUpper;
+   userInput.push(rUpper);
 }
 
 if (clickNumb) {
-  userInput.push.rNumber;
+  userInput.push(rNumber);
 }
 
 if (clickLower); {
-  userInput.push.rLower;
+  userInput.push(rLower);
 }
 
 if (clickUpper); {
-  userInput.push.rSpecChar;
+  userInput.push(rSpecChar);
 }
 
 //collection from user input^^^
@@ -57,8 +57,12 @@ return userInput;
 
 }
 ///loop 
-for (var i = 0; i < userInput; i ++)
-
+for (var i = 0; i < length; i ++){
+  var  userInput = userInput[Math.floor(Math.random() * userInput.length)];
+  var random = userInput[Math.floor() * userInput.length];
+  password=password+randomChar
+}
+return password
 
 // Write password to the #password input//// added (userInput)
 function writePassword(userInput) {
