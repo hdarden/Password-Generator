@@ -6,4 +6,4 @@ For this application I created a password generator that creates a password for 
 # Link
 https://hdarden.github.io/Password-Generator/
 
-<img alt="Screen Shot 2020-05-09 at 8 26 24 `PM" scr="https://user-images.githubusercontent.com/63661120/81488172-62651300-9233-11ea-943a-1fee2830f4eb.png">
+<img width="733" alt="Screen Shot 2020-05-20 at 3 50 58 PM" src="https://user-images.githubusercontent.com/63661120/82490780-bc769b80-9ab1-11ea-85b9-98197a1cff77.png">
